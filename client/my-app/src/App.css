@@ -1,0 +1,151 @@
+/* navbar css */
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.Navbar_maincontainer {
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Navbar_li {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  transition: all 0.3s ease 0s;
+}
+
+.li_item:hover {
+  transform: translateY(-3px);
+  color: rgb(4, 165, 44);
+  cursor: pointer;
+}
+
+.Navbar_left {
+  display: flex;
+  width: 60%;
+  text-align: start;
+  gap: 5%;
+  align-items: center;
+
+}
+
+.Navbar_right {
+  display: flex;
+  width: 40%;
+  text-align: end;
+  gap: 4%;
+  justify-content: flex-end;
+}
+
+.logo_navbar {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.Name_comp {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 26px;
+}
+
+.Navbar_search {
+  width: 60%;
+  margin-left: 15%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 50px;
+  background-color: white;
+  align-items: center;
+  border-radius: 7px;
+  box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.4);
+}
+
+.navbar_search_inp {
+  width: 60%;
+  height: 60%;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-color: rgba(20, 20, 20, 0.4);
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+
+}
+
+.navbar_search_button {
+  margin-left: 10%;
+  height: 60%;
+  color: white;
+  background-color: rgb(4, 165, 44);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+.navbar_search_button:hover {
+  cursor: pointer;
+
+}
+
+.Login_button_navbar {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: transparent;
+  color: white;
+  border: rgb(107, 107, 107) 1px solid;
+  padding: 7px;
+  border-radius: 7px;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+}
+
+.Login_button_navbar:hover {
+  cursor: pointer;
+  background-color: rgb(4, 165, 44);
+  border: none;
+}
+
+.Navbar_hide_faq {
+  background-color: rgb(4, 165, 44);
+  color: white;
+  font-size: 12px;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: none;
+}
+
+.faq_unhide:hover+.Navbar_hide_faq {
+  position: absolute;
+  display: block;
+  right: 20%;
+  top: 0px;
+
+}
